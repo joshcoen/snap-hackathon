@@ -136,12 +136,12 @@ def main():
 
       #Here is an example of how to access ESXi side VSAN Performance Service API
       esxMos = vsanapiutils.GetVsanEsxMos(si._stub, context=context)
-      print esxMos
 
       # Get vsan health system
       vpm = esxMos['vsan-performance-manager']
 
       nodeInfo = vpm.VsanPerfQueryNodeInformation()[0]
+      print nodeinfo
 
       print('Hostname: %s' % args.host)
       print('  version: %s' % nodeInfo.version)
