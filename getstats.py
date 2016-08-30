@@ -142,7 +142,7 @@ def main():
 
       nodeInfo = vpm.VsanPerfQueryNodeInformation()[0]
 
-
+      print healthSummary
 
       #print('Hostname: %s' % args.host)
       #print('  version: %s' % nodeInfo.version)
