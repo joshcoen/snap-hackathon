@@ -144,8 +144,8 @@ def main():
 
       #testing api calls
 
-      for a in dir(vpm): print a
-
+      #for a in dir(vpm): print a
+      print QueryStatsObjectInformation
 
       print('Hostname: %s' % args.host)
       print('  version: %s' % nodeInfo.version)
