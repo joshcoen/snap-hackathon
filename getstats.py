@@ -144,9 +144,8 @@ def main():
 
       #testing api calls
 
-      #for a in dir(vpm): print a
-      q = vpm.VsanPerfQueryPerf[0]
-      print q
+      for a in dir(vpm): print a
+
 
       print('Hostname: %s' % args.host)
       print('  version: %s' % nodeInfo.version)
