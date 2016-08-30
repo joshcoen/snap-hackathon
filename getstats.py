@@ -146,7 +146,8 @@ def main():
 
       #for a in dir(vpm): print a
       #print vpm.QueryStatsObjectInformation()
-      print vpm.VsanPerfQueryPerf()
+      stat = vpm.VsanPerfQueryPerf("disk-group")
+      for a in dir(stat): print a
 
       print('Hostname: %s' % args.host)
       print('  version: %s' % nodeInfo.version)
