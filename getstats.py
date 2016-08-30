@@ -142,14 +142,12 @@ def main():
 
       nodeInfo = vpm.VsanPerfQueryNodeInformation()[0]
 
-      print healthSummary
-
-      #print('Hostname: %s' % args.host)
-      #print('  version: %s' % nodeInfo.version)
-      #print('  isCmmdsMaster: %s' % nodeInfo.isCmmdsMaster)
-      #print('  isStatsMaster: %s' % nodeInfo.isStatsMaster)
-      #print('  vsanMasterUuid: %s' % nodeInfo.vsanMasterUuid)
-      #print('  vsanNodeUuid: %s' % nodeInfo.vsanNodeUuid)
+      print('Hostname: %s' % args.host)
+      print('  version: %s' % nodeInfo.version)
+      print('  isCmmdsMaster: %s' % nodeInfo.isCmmdsMaster)
+      print('  isStatsMaster: %s' % nodeInfo.isStatsMaster)
+      print('  vsanMasterUuid: %s' % nodeInfo.vsanMasterUuid)
+      print('  vsanNodeUuid: %s' % nodeInfo.vsanNodeUuid)
 
 # Start program
 if __name__ == "__main__":
