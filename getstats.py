@@ -114,7 +114,6 @@ def main():
       healthSummary = vhs.QueryClusterHealthSummary(
          cluster=cluster, includeObjUuids=True, fetchFromCache=fetchFromCache)
       clusterStatus = healthSummary.clusterStatus
-      for a in dir(healthSummary): print a
       print("Cluster %s Status: %s" % (args.clusterName, clusterStatus.status))
       for hostStatus in clusterStatus.trackedHostsStatus:
          print("Host %s Status: %s" % (hostStatus.hostname, hostStatus.status))
@@ -137,6 +136,8 @@ def main():
 
       #Here is an example of how to access ESXi side VSAN Performance Service API
       esxMos = vsanapiutils.GetVsanEsxMos(si._stub, context=context)
+      print esxMos
+
       # Get vsan health system
       vpm = esxMos['vsan-performance-manager']
 
