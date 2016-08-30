@@ -145,7 +145,7 @@ def main():
       #testing api calls
 
       #for a in dir(vpm): print a
-      q = vpm.VsanPerfQueryPerf     
+      q = vpm.VsanPerfQueryPerf[0]
       print q
 
       print('Hostname: %s' % args.host)
