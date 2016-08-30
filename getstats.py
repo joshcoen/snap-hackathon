@@ -141,7 +141,7 @@ def main():
       vpm = esxMos['vsan-performance-manager']
 
       nodeInfo = vpm.VsanPerfQueryNodeInformation()[0]
-      print nodeinfo
+      print nodeInfo
 
       print('Hostname: %s' % args.host)
       print('  version: %s' % nodeInfo.version)
