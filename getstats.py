@@ -114,7 +114,7 @@ def main():
       healthSummary = vhs.QueryClusterHealthSummary(
          cluster=cluster, includeObjUuids=True, fetchFromCache=fetchFromCache)
       clusterStatus = healthSummary.clusterStatus
-      print healthSummary
+      for a in dir(healthSummary): print a
       print("Cluster %s Status: %s" % (args.clusterName, clusterStatus.status))
       for hostStatus in clusterStatus.trackedHostsStatus:
          print("Host %s Status: %s" % (hostStatus.hostname, hostStatus.status))
